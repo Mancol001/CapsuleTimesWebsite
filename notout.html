@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CapsulesTime | Sorry!</title>
+    <style>
+        body {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;     
+            text-align: center;
+            height: 100vh;           
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, rgb(0, 43, 184), rgb(0, 15, 102));
+
+            color: white;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        button {
+            border-radius: 100px;
+            border: none;
+            background-color: white;
+            transition-duration: 400ms;
+            transition-property: all;
+        }
+
+        button:hover {
+            background-color: rgb(207, 207, 207)
+        }
+
+        button:active {
+            background-color: rgb(179, 255, 176)
+        }
+
+        #cr {
+            color: red;
+        }
+
+        .AboutProgram {
+            width: 50cm;
+        }
+
+        #bt {
+            font-weight: bold;
+        }
+        .TopbarNav {
+            display: flex;                 
+            align-items: center;           
+            justify-content: flex-start;      
+            gap: 20px;
+            width: 95%;                    
+            height: 50px;                 
+            margin: 10px auto;             
+            background-color: rgb(38, 0, 255);
+            border-radius: 100px;
+            padding-left: 20px;
+            font-size: small;
+            transition-duration: 400ms;
+            transition-property: all;
+
+        }
+
+        .TopbarNav:hover {
+            width: 96%;
+            height: 55px;
+            background-color: rgb(44, 93, 255);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="TopbarNav">
+        <h2>Capsules time</h2>
+        <button id="bh">Home</button>
+    </div>
+
+
+    <h1>Sorry ):</h1>
+    <p>The downloads are not out yet!</p>
+
+    <script>
+        document.getElementById("bh").addEventListener("click", function() {
+            window.location.href = "index.html";
+        })
+    </script>
+</body>
+</html>

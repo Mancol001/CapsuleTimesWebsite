@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capsules Time</title>
+    <style>
+        body {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;     
+            text-align: center;
+            height: 100vh;           
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, rgb(0, 43, 184), rgb(0, 15, 102));
+
+            color: white;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        button {
+            border-radius: 100px;
+            border: none;
+            background-color: white;
+            transition-duration: 400ms;
+            transition-property: all;
+        }
+
+        button:hover {
+            background-color: rgb(207, 207, 207)
+        }
+
+        button:active {
+            background-color: rgb(179, 255, 176)
+        }
+
+        #cr {
+            color: red;
+        }
+
+        .AboutProgram {
+            width: 50cm;
+        }
+
+        #bt {
+            font-weight: bold;
+        }
+        .TopbarNav {
+            display: flex;                 
+            align-items: center;           
+            justify-content: flex-start;      
+            gap: 20px;
+            width: 95%;                    
+            height: 50px;                 
+            margin: 10px auto;             
+            background-color: rgb(38, 0, 255);
+            border-radius: 100px;
+            padding-left: 20px;
+            font-size: small;
+            transition-duration: 400ms;
+            transition-property: all;
+
+        }
+
+        .TopbarNav:hover {
+            width: 96%;
+            height: 55px;
+            background-color: rgb(44, 93, 255);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="TopbarNav">
+        <h2>Capsules time</h2>
+        <button id="bh">Download</button>
+    </div>
+
+
+    <h1>Home</h1>
+    <p>Coolest project <span id="cr">yet</span>...</p>
+    <b></b>
+    <h3>🌐 About CapsulesTimes</h3>
+    <div class="AboutProgram">    
+        <p>CapsulesTimes is a free and creative app developed by Mancol001, built with .NET 10.0 Windows Forms in C#.</p>
+        <p>It lets you create digital time capsules that automatically open at a specific date and time you choose.</p>
+        <p>Write messages to your future self, store ideas, memories, or secrets — then set them to unlock later.
+            For example, you could make a capsule today that opens next year and see what you were thinking back then!
+        </p>
+        <p>With its <span id="bt">design and fun concept</span>, CapsulesTimes turns time into a <span id="bt">playful experience</span>.</p>
+        <p>© 2025 Mancol001 — All rights reserved</p>
+    </div>
+
+
+
+
+    <script>
+        document.getElementById("bh").addEventListener("click", function() {
+            window.location.href = "notout.html"; // default: Download/
+        })
+    </script>
+</body>
+</html>
